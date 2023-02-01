@@ -40,7 +40,7 @@ git的功能非常强大, 在网上有非常多完整的介绍,这里笔者通�
 
    在需要追踪的文件所在文件夹右键-->点击Git Bash Here-->在窗口中输入git init  
 
-   ![git_init](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_init.gif)
+   ![git_init](./picture/git_init.gif)
 
 ### 2. 配置git用户名和邮箱
 
@@ -48,7 +48,7 @@ git的功能非常强大, 在网上有非常多完整的介绍,这里笔者通�
 
 配置git邮箱: git config --global user.email "email"
 
-![配置git用户名和邮箱](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/配置git用户名和邮箱.gif)
+![配置git用户名和邮箱](./picture/配置git用户名和邮箱.gif)
 
 
 
@@ -56,7 +56,7 @@ git的功能非常强大, 在网上有非常多完整的介绍,这里笔者通�
 
    在文件夹里新建需要追踪的文件并编辑内容
 
-   ![新建文件](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/新建文件.gif)
+   ![新建文件](./picture/新建文件.gif)
 
 ### 3.加入缓存
 
@@ -64,19 +64,19 @@ git的功能非常强大, 在网上有非常多完整的介绍,这里笔者通�
 
 这里add . 中点(.)的意思是all, 将所有修改点都add近git的缓存
 
-![git_add](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_add.gif)
+![git_add](./picture/git_add.gif)
 
 ### 4.验证是否add成功
 
 使用git status 命令,可以查看目前git追踪的文件夹的文件状态
 
-![git_status](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_status.gif)
+![git_status](./picture/git_status.gif)
 
 
 
 这里可以看到, 返回的结果中, 显示no commits yet 表示缓存中存在待提交(commit)的内容, 下一行的changes to be commited 详细说明了哪些文件的修改待提交
 
-![git_status_add](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_status_add.png)
+![git_status_add](./picture/git_status_add.png)
 
 ### 5.提交一个版本并写下注释
 
@@ -84,43 +84,43 @@ git的功能非常强大, 在网上有非常多完整的介绍,这里笔者通�
 
 该命令会把缓存中的内容提交称为一个版本, 并写有注释xxxx , 同时生成一个唯一的版本id(版本id后续会用到) 
 
-![git_commit](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_commit.gif)  
+![git_commit](./picture/git_commit.gif)  
 
 #### 5.1 commit后查看git status 
 
-![git_status_commit](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_status_commit.gif)
+![git_status_commit](./picture/git_status_commit.gif)
 
 可以看到commit之后, 再查看git status 显示nothing to commit,working tree clean 表示目前缓存中是干净的, 没有待提交的文件
 
-![image-20220306215943753](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_status_commit.png)
+![image-20220306215943753](./picture/git_status_commit.png)
 
 #### 5.2 修改文件内容并add+commit 得到有一个新的版本 
 
-![git_add_commit](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_add_commit.gif)
+![git_add_commit](./picture/git_add_commit.gif)
 
 ### 6.查看历史所有的版本
 
 使用git log --oneline 可以查看所有的历史版本 , 其中oneline是参数, 功能是让每个版本返回一行,且版本id长度为7位的简化版, 如果不见oneline参数,会返回更加详细的信息, 读者可以自己试下, 这里笔者认为oneline返回的信息已经足够了 
 
-![git_log_oneline](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_log_oneline.gif)
+![git_log_oneline](./picture/git_log_oneline.gif)
 
 可以看到, 目前的master版本是【初版v1】其id为51a301f , 最开始的版本【新建文件】的id是931d84a , 
 
 这两个id后续切换版本的时候需要使用到
 
-![git_log_oneline](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_log_oneline.png)
+![git_log_oneline](./picture/git_log_oneline.png)
 
 ### 7.切换到历史指定版本
 
 使用git checkout xxx 可以切换到指定的版本, 其中xxx是版本id
 
-![git_checkout](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_checkout.gif)
+![git_checkout](./picture/git_checkout.gif)
 
 ### 8.将版本切换到最新版本master
 
 git checkout master 会将版本切换到最新版本, 这里master是主版本的意思,切换到最新版本时不能指定id, 只能是master
 
-![git_checkout_master](https://gitee.com/monkeyman/picture/raw/master/2.git_use_local/picture/git_checkout_master.gif)
+![git_checkout_master](./picture/git_checkout_master.gif)
 
 
 
