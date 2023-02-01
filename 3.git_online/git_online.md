@@ -80,7 +80,8 @@ gitee的注册本身很简单， 这里就不再详细描述了， 直接从新�
 | git checkout xxx<br/>gitcheckout master | 将版本切换到指定的版本,其中xxx是版本id<br/>版本id可以使用git log获取<br/>需要切回最新版本的时候使用git checkout master |
 | git status                              | 查看当前git的状态, 会返回待提交或者未add的修改内容           |
 | git push -u origin master               | 将本地的更新推送到远程git仓库                                |
-
+|git push -f --set-upstream origin master:master|以本地仓库内容为准, 强制推送给远程仓库,并覆盖现有远程仓库内容|
+|||
 ## 彩蛋
 
 有同学可能对文章中gif是怎么录制的,这里介绍下工具,  是使用ScreenToGif录制的。这是款简单易上手的软件 , 安装包已经上传到gitee, 在我们的公众号回复【ScreenToGif】获取安装包地址
