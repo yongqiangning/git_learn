@@ -82,6 +82,7 @@ gitee的注册本身很简单， 这里就不再详细描述了， 直接从新�
 | git push -u origin master               | 将本地的更新推送到远程git仓库                                |
 |git push -f --set-upstream origin master:master|以本地仓库内容为准, 强制推送给远程仓库,并覆盖现有远程仓库内容|
 |git pull origin master|将远程仓库的内容拉去下来,并覆盖本地的内容, 一般是在线上仓库编辑后同步至本地仓库|
+|git remote -v|太久不用的仓库忘记远程仓库地址了,执行这个命令, 查看远程仓库地址|
 ## 彩蛋
 
 有同学可能对文章中gif是怎么录制的,这里介绍下工具,  是使用ScreenToGif录制的。这是款简单易上手的软件 , 安装包已经上传到gitee, 在我们的公众号回复【ScreenToGif】获取安装包地址
