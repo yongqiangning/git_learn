@@ -83,6 +83,8 @@ gitee的注册本身很简单， 这里就不再详细描述了， 直接从新�
 |git push -f --set-upstream origin master:master|以本地仓库内容为准, 强制推送给远程仓库,并覆盖现有远程仓库内容|
 |git pull origin master|将远程仓库的内容拉去下来,并覆盖本地的内容, 一般是在线上仓库编辑后同步至本地仓库|
 |git remote -v|太久不用的仓库忘记远程仓库地址了,执行这个命令, 查看远程仓库地址|
+|git reset --hard HEAD^|这样就成功撤销了commit，如果想要连着add也撤销的话，–soft改为–hard（删除工作空间的改动代码）。命令详解：HEAD^ 表示上一个版本，即上一次的commit，也可以写成HEAD~1<br/>如果进行两次的commit，想要都撤回，可以使用HEAD~2<br/>–soft<br/>不删除工作空间的改动代码 ，撤销commit，不撤销git add file<br />–hard<br/>删除工作空间的改动代码，撤销commit且撤销add|
+|||
 ## 彩蛋
 
 有同学可能对文章中gif是怎么录制的,这里介绍下工具,  是使用ScreenToGif录制的。这是款简单易上手的软件 , 安装包已经上传到gitee, 在我们的公众号回复【ScreenToGif】获取安装包地址
